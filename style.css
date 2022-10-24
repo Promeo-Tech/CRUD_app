@@ -1,0 +1,61 @@
+
+  .body{
+background-image: url('BackGroundImage3.png');
+background-size: cover;
+background-attachment: fixed;
+    
+    
+  }
+  
+  
+  
+  .title{
+    text-align: center;
+    margin: left;
+    margin-top: 25px;  
+    text-transform: uppercase;
+    line-height: 4.0;
+    text-shadow: 2px 2px 5px rgb(7, 7, 116);
+  }
+
+
+.P1{
+    text-shadow: 2px 2px 5px rgb(7, 7, 116);
+    text-align: center;
+    margin-top: 25px;
+    font-size: 25px;
+
+}
+
+
+
+  .form{
+      margin: auto;
+      max-width:400px;
+      text-align: center
+  }
+
+  input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+
+
+  }
+  #edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  td{
+      background-color: white;
+      padding-right: 10px;
+      text-align: left;
+  }
+
+  .to-do{
+      background: transparent !important;
+  }
+ 
+
+ 

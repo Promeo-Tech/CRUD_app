@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Homework For This Week</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="body">
+
+
+
+
+
+
+    <div class="title">
+        <h1>Homework For This Week</h1>        
+    </div>
+
+    <div class="P1">
+        <p>Assignments that need to be completed</p>
+    </div>
+
+<div class="form">                                                                                  <!--I have created a form to collect the input/assignments in the tabel-->
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+    <input type="text" id="add-todo" placeholder="Homework">
+    <input type="submit" value="Add" class="btn btn-primary">                                       <!-- here is the add button, I used bootstrap inorder to color it-->
+    </form>
+    <p> I Have: </p>
+    <p id="counter"></p>                                                                            <!-- this counts how many tasks i have to complete -->        
+
+
+
+
+
+
+
+    <table>                                                                                             <!-- ths is the table that will display all of my assignments-->
+    <tr class="Needs Completion">
+        <th><h3>Needs Completion:</h3></th>
+    </tr>
+        <tbody id="tasks">
+        </tbody>
+    </table>
+</div>
+
+<div id="edit-box" role="aria-hidden">                                                                              <!-- this is the edit button-->
+    <form action="javascript:void(0);" method="POST" id="save-edit">
+      <input type="text" id="edit-todo">
+      <input type="submit" value="Save" class="btn  "/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>  <!-- this is the close edit box If I choose not the save-->
+    </form>
+  </div>
+
+
+
+
+
+<script src="Homework.js"></script>
+</body>
+</html>
